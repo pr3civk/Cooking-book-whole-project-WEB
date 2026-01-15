@@ -9,6 +9,8 @@ API REST dla aplikacji książki kucharskiej.
 - MySQL
 - Node.js (opcjonalnie)
 
+Trzeba plik htdocs wrzucić do folderu www wxampp
+
 ## Instalacja
 
 ```bash
