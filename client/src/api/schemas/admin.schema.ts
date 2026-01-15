@@ -22,7 +22,7 @@ export const adminCommentDto = z.object({
   recipe_id: z.number(),
   recipe_title: z.string().optional().nullable(),
   user_id: z.number(),
-  user_name: z.string().optional().nullable(),
+  name: z.string().optional().nullable(),
   created_at: z.string(),
   updated_at: z.string(),
 });
