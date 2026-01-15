@@ -34,5 +34,8 @@ Laravel 12, PHP 8.2+, Laravel Sanctum, MySQL, L5-Swagger
 - Panel administratora
 - Upload i zarządzanie obrazami
 
+## Envs
+Do Uruchomienia aplikacji potrzebne są enviroment values, z powodu bezpieczeństwa dołączone są osobno w volderze `envs`
+
 ## Licencja
 MIT

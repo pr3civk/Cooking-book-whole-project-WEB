@@ -93,7 +93,7 @@ export function AdminComments() {
     },
     {
       header: "Author",
-      accessor: (row: AdminCommentDto) => row.user_name || `User #${row.user_id}`,
+      accessor: (row: AdminCommentDto) => row.name || `User #${row.id}`,
       className: "w-32",
     },
     {
