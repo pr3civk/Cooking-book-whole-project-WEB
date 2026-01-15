@@ -77,12 +77,14 @@ Route::middleware(['auth:sanctum'])->group(function () {
 });
 
 
-// Admin routes
-Route::middleware(['auth:sanctum', 'admin'])->prefix('admin')->group(function () {
-    // Categories admin
+Route::middleware(['auth:sanctum', 'admin'])->group(function () {
     Route::post('/categories', [CategoryController::class, 'store']);
     Route::put('/categories/{category}', [CategoryController::class, 'update']);
     Route::delete('/categories/{category}', [CategoryController::class, 'destroy']);
+});
+
+// Admin routes
+Route::middleware(['auth:sanctum', 'admin'])->prefix('admin')->group(function () {
 
     // Users admin
     Route::get('/users', [AdminUserController::class, 'index']);
